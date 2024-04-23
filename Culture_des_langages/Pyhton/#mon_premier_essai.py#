@@ -1,0 +1,26 @@
+print('hello')
+a= 'lawrence'
+print(a)
+
+print(2<4 or True )
+x= 0
+def f():
+    global x
+    x = 1
+f()
+print(x)
+
+def g():
+    global x
+    x = x + 10
+    return True
+g()
+print(x)
+f()
+print(x)
+
+if True and g():
+    print("if")
+else :
+    print("else")
+print(x)
